@@ -49,24 +49,47 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100%;
-
-  /* display: grid;
-  grid-template-columns: 40% 1fr;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 40px; */
 }
 
 .container__botao {
-  background-color: var(--cor-secundaria);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  height: 80%;
-  width: 40%;
+  margin-top: 166px;
+  margin-bottom: 68px;
+  width: 50%;
+}
+
+.container__botao h1 {
+  color: var(--cor-primaria);
+}
+
+.container__botao p {
+  /* font-family: ; */
+  margin-left: 12px;
+}
+
+.container__botao button {
+  border: none;
+  padding: 20px 80px;
+  font-family: 16px;
+  border-radius: 24px;
+}
+
+.container__botao button:first-of-type {
+  color: var(--cor-secundaria);
+  background-color: var(--cor-terciaria);
+  /* font-family: ; */
+
+  margin-right: 24px;
+}
+
+.container__botao button:last-child {
+  color: var(--cor-primaria);
+  background-color: var(--cor-secundaria);
+  /* font-family: ; */
 }
 
 .container__mensagem {
