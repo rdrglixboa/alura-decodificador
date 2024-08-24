@@ -34,8 +34,8 @@ img {
   --cor-secundaria: #343a40;
   --cor-terciaria: #ced4da;
 
-  --fonte-primaria: "Jura", sans-serif;
-  --fonte-secundaria: "Amatic SC", sans-serif;
+  --fonte-primaria: "Audiowide", sans-serif;
+  --fonte-secundaria: "Inika", serif;
 }
 
 body {
@@ -43,13 +43,15 @@ body {
   color: #fff;
   background-size: cover; /* Ajusta a imagem para cobrir todo o fundo da tela */
   height: 100vh; /* Define a altura da tela como 100% da altura da janela */
-  margin: 0;
+  
+  font-family: var(--fonte-secundaria);
 }
 
 .container {
   display: flex;
   justify-content: center;
   height: 100%;
+  gap: 40px;
 }
 
 .container__botao {
@@ -57,24 +59,44 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
-  margin-top: 166px;
-  margin-bottom: 68px;
+  margin-top: 120px;
+  margin-bottom: 80px;
   width: 50%;
 }
 
-.container__botao h1 {
+.container__botao textarea {
+  background-color: var(--cor-secundaria);
   color: var(--cor-primaria);
+  font-family: var(--fonte-primaria);
+
+  
+  width: 90%;
+  height: 400px;
+  padding: 12px 20px;
+  resize: none;
+  box-sizing: border-box;
+ 
+
+  font-size: 32px;
+  border-radius: 8px;
+
+
+
 }
 
 .container__botao p {
-  /* font-family: ; */
+  font-family: var(--fonte-secundaria);
+
+  font-size: 12px;
   margin-left: 12px;
 }
 
 .container__botao button {
   border: none;
+  font-family: var(--fonte-primaria);
+
+  font-size: 16px;
   padding: 20px 80px;
-  font-family: 16px;
   border-radius: 24px;
 }
 
@@ -93,6 +115,25 @@ body {
 }
 
 .container__mensagem {
-  background-color: var(--cor-terciaria);
-  height: 40%;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-terciaria);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 32px;
+}
+
+.container__mensagem img {
+  margin-bottom: 20px;
+}
+
+.container__mensagem h2 {
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+
+  margin-bottom: 4px;
 }
