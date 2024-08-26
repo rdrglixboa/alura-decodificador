@@ -17,26 +17,31 @@
 
     <div class="container__botao">
       <div>
-        <textarea placeholder="Digite seu texto"></textarea>
+        <input id="texto" type="text" placeholder="Digite seu texto"></input>
       </div>
       <div>
         <p>Apenas letras minúsculas e sem acento</p>
-        <button>CRIPTOGRAFAR</button>
-        <button>DESCRIPTOGRAFAR</button>
+        <button class="botaoCriptografar">CRIPTOGRAFAR</button>
+        <button class="botaoDescriptografar">DESCRIPTOGRAFAR</button>
       </div>
     </div>
 
 
     <div class="container__mensagem">
-      <div class="imagem">
-        <img src="./img/cypher_spray.png" alt="">
+
+      <div>
+        <p class="resultado"></p>
+        <img class="imagem" src="./img/cypher_spray.png" alt="">
+        <div class="descricao">
         <h2> Nenhuma mensagem <br>encontrada</h2>
-        <p> Digite um texto que você deseja <br>criptografar ou descriptografar.</p>
+        <p > Digite um texto que você deseja <br>criptografar ou descriptografar.</p>
+        </div>
       </div>
     </div>
 
   </main>
 
+  <script src="./script.js"></script>
 </body>
 
 </html>
