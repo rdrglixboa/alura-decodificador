@@ -1,4 +1,4 @@
-Projeto realizado como desafio final durante a trilha T7 da alura em parceria com a ONE.
+Projeto realizado como desafio final durante formação Iniciante em Programação T7 - ONE
 
 O desafio consiste em fazer um codigo que criptografa ou descriptografa o texto escrito
 
