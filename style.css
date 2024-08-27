@@ -41,8 +41,8 @@ img {
 body {
   background-image: url(img/cypher_silhouette___wallpaper_4k_by_elvenv_dfb38s3.png);
   color: #fff;
-  background-size: cover; /* Ajusta a imagem para cobrir todo o fundo da tela */
-  height: 100vh; /* Define a altura da tela como 100% da altura da janela */
+  background-size: cover; 
+  height: 100vh; 
 
   font-family: var(--fonte-secundaria);
   
@@ -106,7 +106,6 @@ body {
 .container__botao button:last-child {
   color: var(--cor-primaria);
   background-color: var(--cor-secundaria);
-  /* font-family: ; */
 }
 
 .container__mensagem {
@@ -122,14 +121,12 @@ body {
   margin-bottom: 40px;
   border-radius: 32px;
   width: 325px;
-  /* max-width: 400px; */
 }
 
 .container__mensagem.ativo {
 
   align-items: start;
   justify-content: start;
-
   width: 325px;
   max-width: 400px;
 }
@@ -175,11 +172,19 @@ body {
   padding: 12px;
   margin-top: 20px;
   margin-left: 12px;
+
+
+ max-width: 280px; 
 }
 
 
 .resultado.ativo{
   display: block;
+  word-wrap: break-word;
 
 }
 
+
+button:hover{
+  cursor: pointer;
+}

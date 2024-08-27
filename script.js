@@ -1,8 +1,6 @@
 const botaoCriptografar = document.querySelector(".botaoCriptografar")
 const botaoDescriptografar = document.querySelector(".botaoDescriptografar")
 const imagem = document.querySelector(".imagem")
-// const texto = document.querySelector("#texto").value
-// const resultado = document.querySelector(".resultado")
 const descricao = document.querySelector(".descricao")
 const container = document.querySelector(".container__mensagem")
 const resultado = document.querySelector(".resultado")
@@ -20,7 +18,6 @@ console.log(container)
 
  imagem.classList.add("ativo")
  descricao.classList.add("ativo")
-// texto.classList.remove("ativo")
 
 function filtrarEntrada(input){
  input.value = input.value.replace(/[^a-z]/g, '');
@@ -37,7 +34,6 @@ function criptografar(){
 
 
     var texto = document.querySelector('#texto').value;
-    // resultado.textContent = texto;
     console.log("Texto armazenado:", texto); 
 
     if(texto.includes("a") || texto.includes("e") || texto.includes("i") || texto.includes("o") || texto.includes("u")){
